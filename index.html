@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> DJ tracklist </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navBar {
+            overflow:hidden;
+            background-color: #333;
+        }
+        .navBar a {
+            float: left;
+            font-size: 24px;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration:none;
+            font-family:Arial;
+        }
+        .dropdown {
+            float: left;
+            overflow:hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 24px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: Arial;
+            margin: 0;
+        }
+        .navBar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+    </head>
+    
+
+<body style="background-color:black;">
+    <h1 style="background-color:aqua; text-align:center; font-family:Arial; font-style:normal;"> HOME PAGE </h1>
+    <p style="background-image:conic-gradient(); text-align:center; font-family:Arial; color:white;"/> 
+    A list of the different genres of music I want to mix</p>
+    <h1 style="background-color:aqua; text-align:center; font-family:Arial; font-style:normal;"> Genres </h1>
+    <div class="navBar">
+
+        <a href="https://getn.topsandtees.space/qmK1aEEr9K" target="_blank" style="color:gold"> MP3 converter</a>
+
+        <a href="https://drive.google.com/drive/folders/1LyUvGGEOPpWQf4BLIPCm3kqzgW6qbL3w?usp=sharing" target="_blank"
+            > Acapellas</a>
+        <a href="Acapellas.html" target="_blank"> Acapellas</a>
+        <a href="Rap.html" target="_blank">Rap</a>
+        <a href="Pop.html" target="_blank">Pop</a>
+
+
+
+        <!-------------------------------------------------------------------------->
+        <!-- Phonk Button -->
+        <!---------------------------------------------------------------------->
+        <div class="dropdown">
+            <button class="dropbtn">
+                Phonk <i class="fa fa-caret-down"> </i>
+            </button>
+            <div class="dropdown-content">
+                <a href="BrazPhonk.html"> Brazilian Phonk</a>
+                <a href="DriftPhonk.html"> Drift Phonk</a>
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------->
+        <!-- House Button -->
+        <!---------------------------------------------------------------------->
+        <div class="dropdown">
+            <button class="dropbtn">
+                House <i class="fa fa-caret-down"> </i>
+            </button>
+            <div class="dropdown-content">
+                <a href="BigRoom.html"> Big Room House</a>
+                <a href="DeepHouse.html"> Deep House</a>
+                <a href="FutureHouse.html"> Future House</a>
+                <a href="TropicalHouse.html"> Tropical House</a>
+            </div>
+        </div>
+
+        <a href="MiscGenres.html" target="_blank"> Miscillaneous Genres</a>
+
+    </div>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
